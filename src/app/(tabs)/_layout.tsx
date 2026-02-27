@@ -1,14 +1,21 @@
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
+import React from "react";
 
 export default function TabLayout() {
   return (
     <NativeTabs>
       <NativeTabs.Trigger name="pokedex">
-        <Icon sf={{ default: "list.bullet", selected: "list.bullet" }} />
+        <Icon
+          sf={{ default: "list.bullet", selected: "list.bullet" }}
+          drawable="ic_menu_sort_by_size"
+        />
         <Label>Pokedex</Label>
       </NativeTabs.Trigger>
       <NativeTabs.Trigger name="favorites">
-        <Icon sf={{ default: "heart", selected: "heart.fill" }} />
+        <Icon
+          sf={{ default: "heart", selected: "heart.fill" }}
+          drawable="star_on"
+        />
         <Label>Favorites</Label>
       </NativeTabs.Trigger>
     </NativeTabs>
